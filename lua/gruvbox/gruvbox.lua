@@ -279,6 +279,14 @@ local theme = lush(function()
     GitSignsChange {fg=bright_blue},
     GitSignsDelete {fg=bright_red},
     -- GitSignsCurrentLineBlame {},
+
+    -- fugitive
+    diffAdded {DiffAdd},
+    diffRemoved {DiffDelete},
+    diffChanged {DiffChange},
+    fugitiveUntrackedHeading {fg=bright_aqua, gui="bold"},
+    fugitiveStagedHeading {fg=bright_green, gui="bold"},
+    fugitiveUnstagedHeading {fg=bright_orange, gui="bold"},
   }
 end)
 
