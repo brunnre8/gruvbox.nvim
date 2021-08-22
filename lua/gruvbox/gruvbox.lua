@@ -262,12 +262,12 @@ local theme = lush(function()
     -- TelescopePrompt {},
 
     -- nerdtree
-    NERDTreeDirSlash {},
-    NERDTreeFile {},
-    -- NERDTreeDir {},
+    NERDTreeDir {fg=bright_aqua},
+    NERDTreeDirSlash {NERDTreeDir},
+    NERDTreeFile {Normal},
+    NERDTreeExecFile {Normal, fg=bright_green},
     -- NERDTreeOpenable {},
     -- NERDTreeClosable {},
-    -- NERDTreeExecFile {},
     -- NERDTreeUp {},
     -- NERDTreeCWD {},
     -- NERDTreeHelp {},
