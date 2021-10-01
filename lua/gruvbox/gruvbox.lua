@@ -59,7 +59,7 @@ local theme = lush(function()
     DiffDelete   { fg=bright_red }, -- diff mode: Deleted line |diff.txt|
     DiffText     { fg=bright_blue, gui="reverse" }, -- diff mode: Changed text within a changed line |diff.txt|
     VertSplit    { fg=bg1 }, -- the column separating vertically split windows
-    SignColumn   { Normal }, -- column where |signs| are displayed
+    SignColumn   { }, -- column where |signs| are displayed
     EndOfBuffer  { fg=dim_blue }, -- filler lines (~) after the end of the buffer.  By default, this is highlighted like |hl-NonText|.
     ErrorMsg     { fg=bright_red }, -- error messages on the command line
     Folded       { fg=fg4, bg=bg1 }, -- line used for closed folds
@@ -73,8 +73,8 @@ local theme = lush(function()
     StatusLineNC { fg=fg4, bg=bg1 }, -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
     SpellBad     { sp=bright_red, gui="underline" }, -- Word that is not recognized by the spellchecker. |spell| Combined with the highlighting used otherwise.
     SpellCap     { SpellBad }, -- Word that should start with a capital. |spell| Combined with the highlighting used otherwise.
-    SpellLocal   { Normal }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
-    SpellRare    { Normal }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
+    SpellLocal   { }, -- Word that is recognized by the spellchecker as one that is used in another region. |spell| Combined with the highlighting used otherwise.
+    SpellRare    { }, -- Word that is recognized by the spellchecker as one that is hardly ever used.  |spell| Combined with the highlighting used otherwise.
     Pmenu        { fg=fg1, bg=bg2 }, -- Popup menu: normal item.
     PmenuSel     { fg=bg, bg=dim_yellow }, -- Popup menu: selected item.
     PmenuSbar    { Pmenu }, -- Popup menu: scrollbar.
@@ -89,18 +89,18 @@ local theme = lush(function()
     Constant       { fg=bright_aqua }, -- (preferred) any constant
     String         { fg=bright_green }, --   a string constant: "this is a string"
     Character      { fg=bright_purple }, --  a character constant: 'c', '\n'
-    Number         { Normal }, --   a number constant: 234, 0xff
+    Number         { }, --   a number constant: 234, 0xff
     Boolean        { fg=bright_orange }, --  a boolean constant: TRUE, false
     Float          { Number }, --    a floating point constant: 2.3e10
 
-    Identifier     { Normal }, -- (preferred) any variable name
+    Identifier     { }, -- (preferred) any variable name
     Function       { fg=bright_yellow}, -- function name (also: methods for classes)
 
     Statement      { fg=bright_orange }, -- (preferred) any statement
     Conditional    { fg=bright_orange }, --  if, then, else, endif, switch, etc.
     Repeat         { Conditional }, --   for, do, while, etc.
     Label          { Statement }, --    case, default, etc.
-    Operator       { Normal }, -- "sizeof", "+", "*", etc.
+    Operator       { }, -- "sizeof", "+", "*", etc.
     Keyword        { Label }, --  any other keyword
     Exception      { Statement }, --  try, catch, throw
 
@@ -115,7 +115,7 @@ local theme = lush(function()
     -- Structure      { }, --  struct, union, enum, etc.
     -- Typedef        { }, --  A typedef
 
-    Special        { Normal }, -- (preferred) any special symbol
+    Special        { }, -- (preferred) any special symbol
     -- SpecialChar    { }, --  special character in a constant
     -- Tag            { }, --    you can use CTRL-] on this
     -- Delimiter      { }, --  character that needs attention
@@ -264,8 +264,8 @@ local theme = lush(function()
     -- nerdtree
     NERDTreeDir {fg=bright_aqua},
     NERDTreeDirSlash {NERDTreeDir},
-    NERDTreeFile {Normal},
-    NERDTreeExecFile {Normal, fg=bright_green},
+    NERDTreeFile {},
+    NERDTreeExecFile {fg=bright_green},
     -- NERDTreeOpenable {},
     -- NERDTreeClosable {},
     -- NERDTreeUp {},
