@@ -218,7 +218,7 @@ local theme = lush(function()
     -- TSKeywordFunction    { };    -- For keywords used to define a function.
     -- TSLabel              { };    -- For labels: `label:` in C and `:label:` in Lua.
     -- TSMethod             { };    -- For method calls and definitions.
-    -- TSNamespace          { };    -- For identifiers referring to modules and namespaces.
+    TSNamespace          { Identifier };    -- For identifiers referring to modules and namespaces.
     -- TSNone               { };    -- TODO: docs
     -- TSNumber             { };    -- For all numbers
     -- TSOperator           { };    -- For any operator: `+`, but also `->` and `*` in C.
