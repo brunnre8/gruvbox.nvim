@@ -289,7 +289,7 @@ hi("fugitiveStagedHeading", { fg = bright_green, bold = true })
 hi("fugitiveUnstagedHeading", { fg = bright_orange, bold = true })
 -- gitsigns.nvim
 hi("GitSignsAdd", { link = "DiffAdd" })
-hi("GitSignsChange", { link = "DiffChange" })
+hi("GitSignsChange", { link = "DiffText" })
 hi("GitSignsDelete", { link = "DiffDelete" })
 -- nerdtree
 hi("NERDTreeDir", { fg = bright_aqua })
