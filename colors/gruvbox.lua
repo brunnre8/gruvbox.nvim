@@ -57,8 +57,8 @@ hi("Cursor", { reverse = true })
 hi("Added", { fg = bright_green })
 hi("Changed", { fg = bright_blue })
 hi("Removed", { fg = bright_red })
-hi("DiffAdd", { fg = bright_green }) -- diff mode: Added line |diff.txt|
-hi("DiffChange", {}) -- diff mode: Changed line |diff.txt|
+hi("DiffAdd", { fg = bright_green })  -- diff mode: Added line |diff.txt|
+hi("DiffChange", {})                  -- diff mode: Changed line |diff.txt|
 hi("DiffDelete", { fg = bright_red }) -- diff mode: Deleted line |diff.txt|
 hi("DiffText", { fg = bright_blue, bold = true })
 hi("ErrorMsg", { fg = bright_red })
@@ -193,10 +193,10 @@ hi("@markup.link", { link = "Identifier" })
 hi("@markup.heading", { link = "Title" })
 hi("@markup.link.url", { link = "Underlined" })
 hi("@markup.underline", { link = "Underlined" })
-hi("@comment.error", { link = "Error" }) -- error-type comments (e.g. `ERROR`, `FIXME`, `DEPRECATED`)
+hi("@comment.error", { link = "Error" })                                      -- error-type comments (e.g. `ERROR`, `FIXME`, `DEPRECATED`)
 hi("@comment.warning", { fg = bright_orange, underline = true, bold = true }) -- warning-type comments (e.g. `WARNING`, `FIX`, `HACK`)
-hi("@comment.todo", { link = "Todo" }) -- todo-type comments (e.g. `TODO`, `WIP`, `FIXME`)
-hi("@comment.note", { link = "Todo" }) -- note-type comments (e.g. `NOTE`, `INFO`, `XXX`)
+hi("@comment.todo", { link = "Todo" })                                        -- todo-type comments (e.g. `TODO`, `WIP`, `FIXME`)
+hi("@comment.note", { link = "Todo" })                                        -- note-type comments (e.g. `NOTE`, `INFO`, `XXX`)
 
 -- Miscs
 hi("@comment", { link = "Comment" })
