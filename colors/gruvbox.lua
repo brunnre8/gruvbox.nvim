@@ -296,3 +296,5 @@ hi("NERDTreeDir", { fg = bright_aqua })
 hi("NERDTreeDirSlash", { fg = bright_aqua })
 hi("NERDTreeFile", {})
 hi("NERDTreeExecFile", { fg = bright_green })
+-- telescope
+hi("TelescopeSelection", { link = "PmenuSel" })
