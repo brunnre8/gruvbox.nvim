@@ -2,8 +2,17 @@
 The only theme for neovim you'll ever need
 
 # Installing
-Using `packer`
+Use your favorite plugin manager...
+Lazy:
 
 ```lua
-use {"brunnre8/gruvbox.nvim", requires = {"rktjmp/lush.nvim"}}
+{
+    "brunnre8/gruvbox.nvim",
+    priority = 1000,
+    lazy = false,
+    config = function()
+        -- load the colorscheme here
+        vim.cmd([[colorscheme gruvbox]])
+    end,
+},
 ```
