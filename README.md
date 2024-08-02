@@ -2,7 +2,7 @@
 The only theme for neovim you'll ever need
 
 # Installing
-Use your favorite plugin manager...
+Use your favorite plugin manager...  
 Lazy:
 
 ```lua
