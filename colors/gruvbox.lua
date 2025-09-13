@@ -264,6 +264,9 @@ hi("@lsp.type.type", { link = "Type" })
 hi("@lsp.type.typeParameter", { link = "TypeDef" })
 hi("@lsp.type.variable", { link = "Identifier" })
 
+-- language specific stuff
+hi("@lsp.type.property.java", { fg = bright_purple })
+
 -- Default colors only used with a dark background.
 hi("ColorColumn", { bg = bg1 })
 hi("CursorColumn", { bg = bg2 })
