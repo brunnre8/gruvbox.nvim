@@ -179,7 +179,8 @@ hi("DiagnosticDeprecated", { sp = bright_red, strikethrough = true })
 hi("DiagnosticUnnecessary", { link = "Comment" })
 hi("LspInlayHint", { link = "NonText" })
 hi("LspSignatureActiveParameter", { sp = bright_yellow, underline = true })
-hi("SnippetTabstop", { link = "Visual" })
+hi("SnippetTabstop", { sp = dim_yellow, underline = true })
+hi("SnippetTabstopActive", { sp = bright_yellow, underline = true })
 
 -- TODO: whatever
 -- BUG: not good
