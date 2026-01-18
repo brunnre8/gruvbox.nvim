@@ -178,6 +178,7 @@ hi("DiagnosticSignOk", { link = "DiagnosticOk" })
 hi("DiagnosticDeprecated", { sp = bright_red, strikethrough = true })
 hi("DiagnosticUnnecessary", { link = "Comment" })
 hi("LspInlayHint", { link = "NonText" })
+hi("LspSignatureActiveParameter", { sp = bright_yellow, underline = true })
 hi("SnippetTabstop", { link = "Visual" })
 
 -- TODO: whatever
