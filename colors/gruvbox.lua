@@ -269,6 +269,8 @@ hi("@lsp.type.variable", { link = "Identifier" })
 -- language specific stuff
 hi("@lsp.type.property.java", { fg = bright_purple })
 hi("@lsp.mod.static", { fg = bright_purple })
+-- gopls looses the constant mod in a function closure
+hi("@lsp.mod.readonly.go", { link = "Constant" })
 
 -- Default colors only used with a dark background.
 hi("ColorColumn", { bg = bg1 })
