@@ -268,6 +268,7 @@ hi("@lsp.type.variable", { link = "Identifier" })
 
 -- language specific stuff
 hi("@lsp.type.property.java", { fg = bright_purple })
+hi("@lsp.mod.static", { fg = bright_purple })
 
 -- Default colors only used with a dark background.
 hi("ColorColumn", { bg = bg1 })
