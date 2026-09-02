@@ -273,8 +273,8 @@ hi("@lsp.mod.static", { fg = bright_purple })
 hi("@lsp.mod.readonly.go", { link = "Constant" })
 
 -- html
-hi("tag.attribute", { fg = bright_purple })
-hi("tag.html", { fg = bright_blue })
+hi("@tag.attribute", { fg = bright_purple })
+hi("@tag.html", { fg = bright_blue })
 
 -- Default colors only used with a dark background.
 hi("ColorColumn", { bg = bg1 })
