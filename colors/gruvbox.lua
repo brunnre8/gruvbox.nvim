@@ -271,6 +271,7 @@ hi("@lsp.type.property.java", { fg = bright_purple })
 hi("@lsp.mod.static", { fg = bright_purple })
 -- gopls looses the constant mod in a function closure
 hi("@lsp.mod.readonly.go", { link = "Constant" })
+hi("@type.builtin.typescript", { link = "Type" })
 
 -- html
 hi("@tag.attribute", { fg = bright_purple })
